@@ -2,11 +2,12 @@ import { Button, Spinner } from "@nextui-org/react";
 import { useAuthStore } from "../../../store/auth/authStore";
 import { LogginModal } from "../../auth/LogginModal";
 import { LoggoutModal } from "../../auth/LoggoutModal";
+import { CardGames } from "../../components/Cards/CardGames";
 
 export const Home = () => {
   const { status, avatar, username } = useAuthStore((state) => state);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cyan-/-aqua-950 to-cyan-900 flex items-center justify-center text-white">
+    <div className="bg-principal flex-center-center">
       <div className="grid grid-cols-3 max-w-4xl h-96 gap-4">
         <div className="bg-white shadow-md rounded-md w-full h-full text-black">
           {status == "not logged" && (
@@ -60,11 +61,11 @@ export const Home = () => {
           )}
         </div>
         <div className="col-span-2 w-full h-96 grid grid-cols-3 justify-items-center gap-3 content-center">
-          <div className="w-44 h-44 bg-red-300"></div>
-          <div className="w-44 h-44 bg-red-300"></div>
-          <div className="w-44 h-44 bg-red-300"></div>
-          <div className="w-44 h-44 bg-red-300"></div>
-          <div className="w-44 h-44 bg-red-300"></div>
+          <CardGames
+            img="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.es%2Ficono-gratis%2Fcalculadora_342344&psig=AOvVaw0SKy7g0eO9Txv5K4lIpH5p&ust=1699121695105000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDkmee3qIIDFQAAAAAdAAAAABAE"
+            title="Random Maths"
+            link="random-maths"
+          />
         </div>
       </div>
     </div>

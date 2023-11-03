@@ -41,7 +41,7 @@ export const LogginModal = () => {
                       color="primary"
                       variant="bordered"
                       startContent={
-                        <img src="icons/googleIcon.svg" className="w-5 h-5" />
+                        <img src="/icons/googleIcon.svg" className="w-5 h-5" />
                       }
                     >
                       Inicia sesión con Google
