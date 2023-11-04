@@ -62,7 +62,7 @@ export const Home = () => {
         </div>
         <div className="col-span-2 w-full h-96 grid grid-cols-3 justify-items-center gap-3 content-center">
           <CardGames
-            img="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.es%2Ficono-gratis%2Fcalculadora_342344&psig=AOvVaw0SKy7g0eO9Txv5K4lIpH5p&ust=1699121695105000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDkmee3qIIDFQAAAAAdAAAAABAE"
+            img="https://static.vecteezy.com/system/resources/previews/021/900/082/non_2x/random-number-gradient-pastel-math-background-vector.jpg"
             title="Random Maths"
             link="random-maths"
           />
